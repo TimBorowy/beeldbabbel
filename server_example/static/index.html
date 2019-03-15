@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!--skip-->
+    <title>Beeldbabbel chatsite</title>
+    <link rel="stylesheet" type="text/css" href="../easyrtc/easyrtc.css" />
+
+    <!--hide-->
+    <link rel="stylesheet" type="text/css" href="css/landing.css" />
+    <link rel="stylesheet" type="text/css" href="css/demo_audio_video_simple_hd.css" />
+
+    <!--show-->
+    <!-- Assumes global locations for socket.io.js and easyrtc.js -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="../easyrtc/easyrtc.js"></script>
+    <script type="text/javascript" src="js/demo_audio_video_simple_hd.js"></script>
+
+</head>
+
+<body onload="connect();">
+    <!--hide-->
+
+    <div id="main">
+        <!-- Main Content -->
+        <!--show-->
+        <h1>Beeldbabbel video chat</h1>
+        <p>chat with your friends in hd audio and video</p>
+
+        <div id="connectControls">
+            <div id="iam">Not yet connected...</div>
+            <strong>Connected users:</strong>
+            <div id="otherClients"></div>
+        </div>
+        <div id="videos">
+
+            <div style="position:relative;float:left;" width="1282" height="722">
+                <video autoplay="autoplay" playsinline="playsinline" id="callerVideo"></video>
+                <video autoplay="autoplay" playsinline="playsinline" class="easyrtcMirror" id="selfVideo" muted="true"
+                    volume="0"></video>
+            </div>
+            <!-- each caller video needs to be in it's own div so it's close button can be positioned correctly -->
+        </div>
+        <!-- End Main Content -->
+    </div>
+
+    <div id="footer">
+        <p>
+            Sexy footer
+        </p>
+    </div>
+    <!--show-->
+</body>
+
+</html>
