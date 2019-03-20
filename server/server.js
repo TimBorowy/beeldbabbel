@@ -33,7 +33,6 @@ easyrtc.events.on("easyrtcAuth", function(socket, easyrtcid, msg, socketCallback
             callback(err, connectionObj);
             return;
         }
-
         connectionObj.setField("credential", msg.msgData.credential, {"isShared":false});
 
         console.log("["+easyrtcid+"] Credential saved!", connectionObj.getFieldValueSync("credential"));
