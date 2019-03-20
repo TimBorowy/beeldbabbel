@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Beeldbabbel chatsite</title>
+    <link rel="stylesheet" type="text/css" href="../easyrtc/easyrtc.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+<body onload="connect();">
+    <div class="main-wrapper">
+        <aside class="user-select">
+            <h1>Beeldbabbel video chat</h1>
+            <p>Chat with your friends in HD audio and video</p>
+
+            <div id="connectControls">
+                <div id="iam">Not yet connected...</div>
+                <strong>Connected users:</strong>
+                <div id="otherClients"></div>
+            </div>
+            <div id="madeby">
+                <p>Made with ☕ by <a href="https://github.com/TimBorowy">Tim Borowy</a></p>
+            </div>
+        </aside>
+
+        <div id="main">
+
+            <div id="videos">
+
+                <div style="position:relative;float:left;" width="1282" height="722">
+                    <video autoplay="autoplay" playsinline="playsinline" id="callerVideo"></video>
+                    <video autoplay="autoplay" playsinline="playsinline" class="easyrtcMirror" id="selfVideo" muted="true"
+                        volume="0"></video>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="/socket.io/socket.io.js"></script>
+<script type="text/javascript" src="../easyrtc/easyrtc.js"></script>
+<script type="text/javascript" src="js/videochat.js"></script>
+
+</html>

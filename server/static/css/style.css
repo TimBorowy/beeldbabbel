@@ -3,6 +3,29 @@ body {
     background-color: #ffffff;
     font-family:Arial, Helvetica, sans-serif;
 }
+.main-wrapper{
+    display: flex;
+}
+
+.user-select{
+    color: #FFF;
+    padding: 20px;
+    background: #3f51b5;
+    box-shadow: 0px 0px 3px black;
+    height: calc(100vh - 40px);
+    position: relative;
+}
+#madeby{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+}
+#madeby a{
+    color: #FFF;
+    text-decoration: none;
+}
 
 #container {
     width:1300px;
@@ -16,32 +39,25 @@ body {
     padding-right: 10px;
 }
 
-#footer {
-    background-color: #3854cf;
-    padding: 15px;
-    color:white;
-    min-height:60px;
-}
-#footer p {
-    text-align: center;
 
-    margin: 0;
-    color:white;
-    text-align:center;
-}
-#footer a {
-    color:white;
-}
+.callbutton {
+    display: block;
+    width: 100%;
+    background: #4caf50;
+    border-radius: 5px;
+    border: none;
+    margin: 5px 0px;
+    color: #FFF;
+    font-size: 1em;
+    padding: 8px;
+    box-shadow: 1px 1px 2px 0px black;
 
-
-
-
-.callButton {
-    float:left;
 }
 
 #otherClients {
-    height:50px;
+    padding: 10px;
+    max-height: 250px;
+    overflow-y: scroll;
 }
 #selfVideo {
     volume: 0;
@@ -62,6 +78,7 @@ body {
     width:1280px;
 }
 .closeButton {
+    /* todo: needs some work, doesn't show up*/
     position:absolute;
     right:2px;
     background-color: transparent;
