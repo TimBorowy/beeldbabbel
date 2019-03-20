@@ -1,6 +1,6 @@
 {
   "name": "webrtc_videochat",
-  "version": "1",
+  "version": "1.0.0",
   "author": "Tim Borowy",
   "description": "A videochat site where you can chat with your friends in HD",
   "scripts": {
