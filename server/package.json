@@ -1,18 +1,11 @@
 {
-  "name": "easyrtc_server_example",
-  "version": "0.1.6",
-  "author": "Priologic Software Inc. <info@priologic.com> (http://priologic.com/)",
-  "description": "Simple EasyRTC server example which includes EasyRTC, Express, and Socket.io",
-  "private": true,
+  "name": "webrtc_videochat",
+  "version": "1",
+  "author": "Tim Borowy",
+  "description": "A videochat site where you can chat with your friends in HD",
   "scripts": {
     "start": "npm run server",
-    "server": "node server.js",
-    "server_ssl": "node server_ssl.js",
-    "docker:build": "docker build -t easyrtc-server -f Dockerfile .",
-    "docker:start": "docker easyrtc-server",
-    "docker-compose:build": "docker-compose -f docker-compose.yml build",
-    "docker-compose:start": "docker-compose -f docker-compose.yml up",
-    "docker-compose:stop": "docker-compose -f docker-compose.yml down"
+    "server": "node server.js"
   },
   "dependencies": {
     "easyrtc": "^1.1.0",
